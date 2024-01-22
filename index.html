@@ -1,49 +1,8 @@
 <html>
   <body>
+    <script src="script.js"></script>
     <script>
-      const width = 1920;
-      const height = 1080;
-
-      const container = document.createElement("div");
-      document.body.append(container);
-
-      container.style.position = "fixed";
-      container.style.left = 0;
-      container.style.right = 0;
-      container.style.top = 0;
-      container.style.bottom = 0;
-
-      container.style.backgroundColor = "mintcream";
-
-      const canvas = document.createElement("div");
-      canvas.style.width = width;
-      canvas.style.height = height;
-
-      canvas.style.borderRadius = "50px";
-      canvas.style.borderColor = "black";
-      canvas.style.borderStyle = "dotted";
-
-      const borderWidth = 5;
-      canvas.style.borderWidth = borderWidth;
-
-      container.appendChild(canvas);
-
-      canvas.style.scale = Math.min(
-        window.innerHeight / (height + borderWidth * 2),
-        window.innerWidth / (width + borderWidth * 2)
-      );
-
-      canvas.style.transformOrigin = "top left";
-
-      window.onresize = () => {
-        canvas.style.scale = Math.min(
-          window.innerHeight / (height + borderWidth * 2),
-          window.innerWidth / (width + borderWidth * 2)
-        );
-      };
-
-      svg.style.set
-
+      setup();
     </script>
   </body>
 </html>
